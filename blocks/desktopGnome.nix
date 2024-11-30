@@ -32,4 +32,10 @@
   programs.firefox.enable = true;
 
   services.flatpak.enable = true;
+
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita";
+  };
 }

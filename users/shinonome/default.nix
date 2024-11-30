@@ -9,8 +9,9 @@
     ripgrep 
     jq      
     yq-go   
-    eza     # A modern replacement for ‘ls’
+    eza     
     fzf     
+    just
   ];
 
   programs.git = {
