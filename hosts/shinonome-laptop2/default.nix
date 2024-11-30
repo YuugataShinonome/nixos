@@ -5,11 +5,11 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ../../modules/basicSystemPackages.nix
-      ../../modules/desktopGnome.nix
-      ../../modules/i18nChinese.nix
-      ../../modules/networkUtils.nix
-      ../../modules/proxyMihomo.nix
+      ../../blocks/basicSystemPackages.nix
+      ../../blocks/desktopGnome.nix
+      ../../blocks/i18nChinese.nix
+      ../../blocks/networkUtils.nix
+      ../../blocks/proxyMihomo.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
