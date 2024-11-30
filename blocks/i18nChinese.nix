@@ -7,6 +7,7 @@
     noto-fonts-cjk-serif
     noto-fonts-emoji
   ];
+
   i18n = {
     supportedLocales = [
       "zh_CN.UTF-8/UTF-8"

@@ -13,6 +13,12 @@
     gnome-contacts
     gnome-maps
     gnome-weather
+    gnome-clocks
+    gnome-software
+    gnome-user-docs
+    gnome-backgrounds
+    gnome-characters
+    orca
     cheese
     epiphany
     geary
@@ -20,6 +26,9 @@
     iagno
     hitori
     atomix
+    yelp
+    totem
+    simple-scan
   ]); 
 
   services.printing.enable = true;
