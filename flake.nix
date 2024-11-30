@@ -4,10 +4,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nur.url = "github:nix-community/NUR"; # read https://github.com/nix-community/NUR for how to use this.
     shinonome-nur.url = "github:YuugataShinonome/nur";
     
@@ -33,14 +29,6 @@
       };
       modules = [
         ./hosts/shinonome-laptop2
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.backupFileExtension = "backup";
-
-          home-manager.users.shinonome = import ./users/shinonome;
-        }
       ];
     };
   };
