@@ -1,5 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
+  nixpkgs.config.allowUnfree = lib.mkForce true;
   environment.systemPackages = with pkgs; [
     vim 
     wget

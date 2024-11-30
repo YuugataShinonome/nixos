@@ -71,12 +71,63 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1712449641,
+        "narHash": "sha256-U9DDWMexN6o5Td2DznEgguh8TRIUnIl9levmit43GcI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "600b15aea1b36eeb43833a50b0e96579147099ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nur": {
+      "locked": {
+        "lastModified": 1732961569,
+        "narHash": "sha256-d/yl5ewjzl7Ur98LJFmEky9pbyN6Zx42X5haBJ2V0Pw=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "6fac7ca63269695e7928ff742c9b752c183e21ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "clash-profile": "clash-profile",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nur": "nur",
+        "shinonome-nur": "shinonome-nur"
+      }
+    },
+    "shinonome-nur": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1732961301,
+        "narHash": "sha256-3+cFV+ZMJUeUdSYCZI7GxClsy3YPZetniZbyG5zH5Qw=",
+        "owner": "YuugataShinonome",
+        "repo": "nur",
+        "rev": "3f20e284b9810d394a5b86596d48c6c186813427",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YuugataShinonome",
+        "repo": "nur",
+        "type": "github"
       }
     }
   },

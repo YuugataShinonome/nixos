@@ -8,12 +8,14 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nur.url = "github:nix-community/NUR"; # read https://github.com/nix-community/NUR for how to use this.
+    shinonome-nur.url = "github:YuugataShinonome/nur";
     
     # other config files
     clash-profile = {
       url = "git+ssh://git@github.com/YuugataShinonome/clash-profile.git?ref=master&shallow=1";
       flake = false;
-    };    
+    };
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs: {

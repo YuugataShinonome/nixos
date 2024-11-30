@@ -10,6 +10,7 @@
       ../../blocks/i18nChinese.nix
       ../../blocks/networkUtils.nix
       ../../blocks/proxyMihomo.nix
+      ../../blocks/vmDistrobox.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
