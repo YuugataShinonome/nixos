@@ -20,6 +20,8 @@
           fcitx5-mozc
           fcitx5-gtk 
           fcitx5-material-color
+          fcitx5-pinyin-moegirl
+          fcitx5-pinyin-zhwiki
         ];
       };
     };
