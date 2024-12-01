@@ -31,6 +31,10 @@
     simple-scan
   ]); 
 
+  environment.systemPackages = (with pkgs; [
+    gnome-tweaks
+  ]);
+
   services.printing.enable = true;
 
   services.pipewire = {
@@ -44,7 +48,7 @@
 
   qt = {
     enable = true;
-    platformTheme = "gnome";
-    style = "adwaita";
+    platformTheme = "qt5ct";
+    style = "kvantum";
   };
 }

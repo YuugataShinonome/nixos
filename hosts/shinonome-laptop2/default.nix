@@ -11,6 +11,7 @@
       ../../blocks/networkUtils.nix
       ../../blocks/proxyMihomo.nix
       ../../blocks/vmDistrobox.nix
+      ../../blocks/vmLibvirt.nix
       ../../blocks/autoGC.nix
       ../../blocks/users/shinonome.nix
     ];

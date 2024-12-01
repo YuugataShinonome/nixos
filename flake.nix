@@ -3,11 +3,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+
     nur.url = "github:nix-community/NUR"; # read https://github.com/nix-community/NUR for how to use this.
     shinonome-nur.url = "github:YuugataShinonome/nur";
-    wezterm.url = "github:wez/wezterm?dir=nix";
     
-    # other config files
     clash-profile = {
       url = "git+ssh://git@github.com/YuugataShinonome/clash-profile.git?ref=master&shallow=1";
       flake = false;
